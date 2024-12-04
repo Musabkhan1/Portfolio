@@ -1,0 +1,475 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #0a192f;
+  /* Dark navy background */
+  color: #ccd6f6;
+  /* Light gray text */
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header and Navigation */
+/* Header Styling */
+/* Header Styling */
+header {
+  background: #0a192f;
+  /* Dark navy background */
+  padding: 20px 0;
+  border-bottom: 1px solid #112240;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Profile Section Styling */
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 60px;
+  /* Adjust size as needed */
+  height: 60px;
+  border-radius: 50%;
+  /* Circular image */
+  border: 2px solid #64ffda;
+  /* Accent border */
+  margin-right: 15px;
+}
+
+.profile-section h1 {
+  font-size: 1.8em;
+  margin: 0;
+  color: #64ffda;
+  /* Accent color */
+}
+
+.profile-section h1 a {
+  text-decoration: none;
+  color: #64ffda;
+}
+
+/* Navigation Menu Styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccd6f6;
+  /* Light gray text */
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #64ffda;
+  /* Accent color */
+  background-color: #112240;
+  /* Slightly darker background */
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+
+.header-content {
+  flex-grow: 1;
+}
+
+.header-content h1 {
+  font-size: 1 em;
+  margin: 0;
+}
+
+.header-content nav ul {
+  display: flex;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.header-content nav ul li {
+  margin: 0 15px;
+}
+
+.header-content nav ul li a {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-content nav ul li a:hover {
+  color: #64ffda;
+}
+
+header {
+  background: #0a192f;
+  padding: 20px 0;
+  border-bottom: 1px solid #112240;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  font-size: 1 em;
+  font-weight: bold;
+  color: #64ffda;
+  /* Accent color */
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #64ffda;
+  background-color: #112240;
+  border-radius: 4px;
+}
+
+/* Main Section */
+main {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #112240;
+  /* Slightly lighter background for content */
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #64ffda;
+}
+
+main h3 {
+  font-size: 1.8em;
+  margin-top: 40px;
+  color: #ccd6f6;
+}
+
+main p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #8892b0;
+}
+
+main a {
+  text-decoration: none;
+  color: #64ffda;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+main a:hover {
+  color: #52ffa8;
+  /* Lighter shade of the accent color */
+}
+
+/* Project Cards */
+.project {
+  margin-top: 30px;
+  text-align: left;
+  padding: 20px;
+  background: #0a192f;
+  border: 1px solid #112240;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  color: #64ffda;
+  font-size: 1.5em;
+}
+
+.project p {
+  margin: 10px 0;
+  color: #8892b0;
+}
+
+.project a {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.project a:hover {
+  color: #52ffa8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0a192f;
+  border-top: 1px solid #112240;
+  color: #8892b0;
+}
+
+footer a {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #52ffa8;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #0a192f;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #52ffa8;
+  color: #0a192f;
+}
+
+/* Cover Letter Styling */
+.cover-letter {
+  text-align: left;
+  background: #112240;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cover-letter h3 {
+  color: #64ffda;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+.cover-letter p {
+  margin: 10px 0;
+  color: #ccd6f6;
+  line-height: 1.8;
+}
+
+.cover-letter strong {
+  color: #64ffda;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #0a192f;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #52ffa8;
+  color: #0a192f;
+}
+
+/* Resume Section Styling */
+.resume-section {
+  text-align: left;
+  background: #112240;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resume-section h3 {
+  color: #64ffda;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.resume-section p {
+  color: #ccd6f6;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.resume-section ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.resume-section li {
+  color: #8892b0;
+  margin: 5px 0;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h4 {
+  color: #ccd6f6;
+  font-size: 1.2em;
+}
+
+.job p {
+  color: #8892b0;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #0a192f;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #52ffa8;
+  color: #0a192f;
+}
+
+/* Scoped Styles for Academic Page */
+.academic-page .styled-list {
+  list-style: none;
+  /* Remove default bullets */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.academic-page .styled-list li {
+  margin: 15px 0;
+  padding: 10px 15px;
+  background: #112240;
+  /* Slightly lighter background for list items */
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.academic-page .styled-list li:hover {
+  background: #0a192f;
+  transition: background 0.3s ease-in-out;
+}
+
+.academic-page .styled-list li a {
+  text-decoration: none;
+}
+
+/* Button Styling */
+.academic-page .button {
+  padding: 8px 16px;
+  background-color: #64ffda;
+  /* Accent color */
+  color: #0a192f;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.academic-page .button:hover {
+  background-color: #52ffa8;
+  color: #0a192f;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+}
